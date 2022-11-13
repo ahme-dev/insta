@@ -16,6 +16,7 @@ body {
   grid-template-columns: 2fr 10fr;
   font-family: sans-serif;
   font-size: smaller;
+  color: #333;
   background-color: whitesmoke;
 }
 body > * {
@@ -71,6 +72,7 @@ body main .profile .right .last {
   display: flex;
   flex-direction: column;
   gap: 0.1rem;
+  font-size: smaller;
 }
 body main .stories {
   display: flex;
@@ -95,6 +97,8 @@ body main .tabs {
 body main .tabs .tabs-head {
   display: flex;
   gap: 1rem;
+  font-size: smaller;
+  font-weight: bold;
 }
 body main .tabs .tabs-head div {
   display: flex;
@@ -111,6 +115,13 @@ body main .tabs .tabs-body {
   justify-content: center;
   align-items: center;
   gap: 1rem;
+}
+body main .tabs .tabs-body h4 {
+  font-size: large;
+  font-weight: lighter;
+}
+body main .tabs .tabs-body a {
+  color: cornflowerblue;
 }
 body footer {
   align-self: flex-end;

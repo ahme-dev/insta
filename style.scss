@@ -22,6 +22,7 @@ body {
 	font-family: sans-serif;
 	font-size: smaller;
 
+	color: #333;
 	background-color: whitesmoke;
 
 	// all children
@@ -94,6 +95,8 @@ body {
 					display: flex;
 					flex-direction: column;
 					gap: 0.1rem;
+
+					font-size: smaller;
 				}
 			}
 		}
@@ -127,6 +130,9 @@ body {
 				display: flex;
 				gap: 1rem;
 
+				font-size: smaller;
+				font-weight: bold;
+
 				div {
 					display: flex;
 					border-top: 0.1rem solid transparent;
@@ -145,6 +151,15 @@ body {
 				justify-content: center;
 				align-items: center;
 				gap: 1rem;
+
+				h4 {
+					font-size: large;
+					font-weight: lighter;
+				}
+
+				a {
+					color: cornflowerblue;
+				}
 			}
 		}
 	}
