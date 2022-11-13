@@ -27,6 +27,7 @@ body aside {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  box-shadow: 1px 1px 2px gainsboro;
   background-color: white;
 }
 body aside img {
@@ -233,13 +234,13 @@ body footer div > *:hover {
   body main .tabs .tabs-head {
     gap: 1rem;
   }
+  body main .tabs .tabs-head img {
+    display: none;
+  }
 }
 @media screen and (max-width: 500px) {
   body {
     grid-template-columns: 1fr 11fr;
-  }
-  body main .tabs-head p {
-    display: none;
   }
   body aside .logo {
     content: url(img/aside/logo-sm.png);
