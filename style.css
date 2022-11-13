@@ -49,7 +49,19 @@ body aside .item {
   cursor: pointer;
   position: relative;
 }
-body aside .item .notify {
+body aside .item img {
+  width: 1.7rem;
+  transition-duration: 0.2s;
+  padding: 0.2rem;
+  border-radius: 50%;
+}
+body aside .item .profile {
+  border: 0.1rem solid black;
+}
+body aside .item:hover img {
+  background-color: gainsboro;
+}
+body aside .notify {
   position: absolute;
   top: -10%;
   right: 70%;
@@ -63,17 +75,10 @@ body aside .item .notify {
   background-color: red;
   color: whitesmoke;
 }
-body aside .item img {
-  width: 1.7rem;
-  transition-duration: 0.2s;
-  padding: 0.2rem;
-  border-radius: 50%;
-}
-body aside .item .profile {
-  border: 0.1rem solid black;
-}
-body aside .item:hover img {
-  background-color: gainsboro;
+body aside .bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 body main {
   display: flex;

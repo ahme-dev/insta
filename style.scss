@@ -68,26 +68,6 @@ body {
 
 			position: relative;
 
-			.notify {
-				position: absolute;
-				top: -10%;
-				right: 70%;
-
-				display: grid;
-				place-items: center;
-
-				width: 1.1rem;
-				height: 1.1rem;
-
-				font-size: x-small;
-
-				border-radius: 50%;
-				border: solid 0.15rem whitesmoke;
-
-				background-color: red;
-				color: whitesmoke;
-			}
-
 			img {
 				width: 1.7rem;
 				transition-duration: 0.2s;
@@ -104,6 +84,32 @@ body {
 					background-color: gainsboro;
 				}
 			}
+		}
+
+		.notify {
+			position: absolute;
+			top: -10%;
+			right: 70%;
+
+			display: grid;
+			place-items: center;
+
+			width: 1.1rem;
+			height: 1.1rem;
+
+			font-size: x-small;
+
+			border-radius: 50%;
+			border: solid 0.15rem whitesmoke;
+
+			background-color: red;
+			color: whitesmoke;
+		}
+
+		.bottom {
+			display: flex;
+			flex-direction: column;
+			gap: 1.5rem;
 		}
 	}
 
