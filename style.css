@@ -193,19 +193,6 @@ body main .tabs .tabs-body a {
   color: dodgerblue;
   font-weight: bold;
 }
-@media screen and (max-width: 700px) {
-  body main .profile {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-  }
-  body main .stories {
-    justify-content: center;
-  }
-  body main .tabs .tabs-head {
-    gap: 1rem;
-  }
-}
 body footer {
   align-self: flex-end;
   display: flex;
@@ -232,4 +219,33 @@ body footer div > * {
 body footer div > *:hover {
   cursor: pointer;
   text-decoration: underline;
+}
+
+@media screen and (max-width: 700px) {
+  body main .profile {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  body main .stories {
+    justify-content: center;
+  }
+  body main .tabs .tabs-head {
+    gap: 1rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  body {
+    grid-template-columns: 1fr 11fr;
+  }
+  body main .tabs-head p {
+    display: none;
+  }
+  body aside .logo {
+    content: url(img/aside/logo-sm.png);
+    width: 1.5rem;
+  }
+  body aside p {
+    display: none;
+  }
 }

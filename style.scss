@@ -9,6 +9,7 @@
 	color: inherit;
 	font-size: inherit;
 }
+
 // body
 
 body {
@@ -255,27 +256,6 @@ body {
 			}
 		}
 	}
-
-	// main responsive
-
-	@media screen and (max-width: 700px) {
-		main {
-			.profile {
-				display: flex;
-				flex-direction: column;
-				gap: 2rem;
-			}
-
-			.stories {
-				justify-content: center;
-			}
-
-			.tabs .tabs-head {
-				gap: 1rem;
-			}
-		}
-	}
-
 	// footer
 
 	footer {
@@ -309,6 +289,48 @@ body {
 					cursor: pointer;
 					text-decoration: underline;
 				}
+			}
+		}
+	}
+}
+
+// responsiveness
+
+@media screen and (max-width: 700px) {
+	body {
+		main {
+			.profile {
+				display: flex;
+				flex-direction: column;
+				gap: 2rem;
+			}
+
+			.stories {
+				justify-content: center;
+			}
+
+			.tabs .tabs-head {
+				gap: 1rem;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 500px) {
+	body {
+		grid-template-columns: 1fr 11fr;
+
+		main .tabs-head p {
+			display: none;
+		}
+
+		aside {
+			.logo {
+				content: url(img/aside/logo-sm.png);
+				width: 1.5rem;
+			}
+			p {
+				display: none;
 			}
 		}
 	}
