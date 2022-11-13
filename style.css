@@ -47,6 +47,21 @@ body aside .item {
   gap: 1rem;
   font-weight: bold;
   cursor: pointer;
+  position: relative;
+}
+body aside .item .notify {
+  position: absolute;
+  top: -10%;
+  right: 70%;
+  display: grid;
+  place-items: center;
+  width: 1.1rem;
+  height: 1.1rem;
+  font-size: x-small;
+  border-radius: 50%;
+  border: solid 0.15rem whitesmoke;
+  background-color: red;
+  color: whitesmoke;
 }
 body aside .item img {
   width: 1.7rem;
@@ -196,7 +211,7 @@ body main .tabs .tabs-body h4 {
 }
 body main .tabs .tabs-body a {
   color: dodgerblue;
-  font-weight: bold;
+  font-weight: 500;
 }
 body footer {
   align-self: flex-end;
