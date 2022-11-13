@@ -29,6 +29,34 @@ body aside {
   justify-content: space-between;
   background-color: white;
 }
+body aside img {
+  width: 6rem;
+}
+body aside nav {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 2rem 0;
+  width: fit-content;
+}
+body aside .item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem;
+  font-weight: bold;
+  border-radius: 1rem;
+  border: 0.1rem solid transparent;
+  cursor: pointer;
+  transition-duration: 0.2s;
+}
+body aside .item img {
+  width: 1.5rem;
+}
+body aside .item:hover {
+  border: 0.1rem solid gainsboro;
+  background-color: whitesmoke;
+}
 body main {
   display: flex;
   flex-direction: column;
