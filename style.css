@@ -165,10 +165,11 @@ body footer {
 body footer select {
   background-color: inherit;
 }
-body footer > * {
-  cursor: pointer;
-}
-body footer > div {
+body footer div {
   display: flex;
   gap: 0.5rem;
+}
+body footer div > *:hover {
+  cursor: pointer;
+  text-decoration: underline;
 }

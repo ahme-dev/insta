@@ -220,13 +220,14 @@ body {
 			background-color: inherit;
 		}
 
-		> * {
-			cursor: pointer;
-		}
-
-		> div {
+		div {
 			display: flex;
 			gap: 0.5rem;
+
+			> *:hover {
+				cursor: pointer;
+				text-decoration: underline;
+			}
 		}
 	}
 }
